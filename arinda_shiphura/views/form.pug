@@ -17,11 +17,11 @@ head
           h3 PASSENGER INFORMATION
           .mb-3
             label.form-label(for='fullName') Full Name *
-            input#fullName.form-control(type='text' name='fullName')
+            input#fullName.form-control(type='text' name='fullName' required='')
             .invalid-feedback Full Name is required.
           .mb-3
             label.form-label(for='gender') Gender *
-            select#gender.form-select(required='')
+            select#gender.form-select( type="text" name="gender" required='')
               option(value='') -- Select --
               option(value='Male') Male
               option(value='Female') Female
@@ -29,7 +29,7 @@ head
             .invalid-feedback Gender is required.
           .mb-3
             label.form-label(for='dob') Date of Birth *
-            input#dob.form-control(type='date' name="dob")
+            input#dob.form-control(type='date' name="dob" required='')
             .invalid-feedback Date of Birth is required.
           .mb-3
             label.form-label(for='nationality') Nationality *
@@ -41,15 +41,15 @@ head
           h3 CONTACT INFORMATION
           .mb-3
             label.form-label(for='phoneNumber') Phone Number *
-            input#phoneNumber.form-control(type='tel' name='phoneNumber')
+            input#phoneNumber.form-control(type='tel' name='phoneNumber' required='')
             .invalid-feedback Phone Number is required and must be 10 digits.
           .mb-3
             label.form-label(for='emailAddress') Email Address *
-            input#emailAddress.form-control(type='email' name="emailAdress")
+            input#emailAddress.form-control(type='email' name="emailAdress" required='')
             .invalid-feedback A valid Email Address is required.
           .mb-3
             label.form-label(for='poBox') P.O. BOX Number
-            input#poBox.form-control(type='text' name="poBox")
+            input#poBox.form-control(type='text' name="poBox" required='')
           .mb-3
             label.form-label(for='emergencyPhone') Emergency Phone Number *
             input#emergencyPhone.form-control(type='tel' required='')
@@ -60,19 +60,19 @@ head
           h3 FLIGHT INFORMATION
           .mb-3
             label.form-label(for='passportNumber') Passport Number *
-            input#passportNumber.form-control(type='text' name="passportNumber")
+            input#passportNumber.form-control(type='text' name="passportNumber"  required='')
             .invalid-feedback Passport Number is required.
           .mb-3
             label.form-label(for='visaDocument') Visa Document *
-            input#visaDocument.form-control(type='file' name="visaDocument")
+            input#visaDocument.form-control(type='file' name="visaDocument" required='')
             .invalid-feedback Visa Document is required.
           .mb-3
             label.form-label(for='departureCity') Departure City *
-            input#departureCity.form-control(type='text' name="departureCity")
+            input#departureCity.form-control(type='text' name="departureCity" required='')
             .invalid-feedback Departure City is required.
           .mb-3
             label.form-label(for='destinationCity') Destination City *
-            input#destinationCity.form-control(type='text' name="destinationCity")
+            input#destinationCity.form-control(type='text' name="destinationCity" required='')
             .invalid-feedback Destination City is required.
     // Submit Button
     .submit-btn
